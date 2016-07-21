@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<servlet>
+		<servlet-name>AgileProject</servlet-name>
+		<servlet-class>com.agilecrm.action.AgileProjectServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AgileProject</servlet-name>
+		<url-pattern>/agileproject</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DeleteEmployeeAction</servlet-name>
+		<servlet-class>com.agilecrm.action.DeleteEmployeeAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteEmployeeAction</servlet-name>
+		<url-pattern>/deleteEmployeeAction</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetAllEmployeeAction</servlet-name>
+		<servlet-class>com.agilecrm.action.GetAllEmployeeAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetAllEmployeeAction</servlet-name>
+		<url-pattern>/getAllEmployeeAction</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetEmployeeAction</servlet-name>
+		<servlet-class>com.agilecrm.action.GetEmployeeAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetEmployeeAction</servlet-name>
+		<url-pattern>/getEmployeeAction</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoginEmployeeAction</servlet-name>
+		<servlet-class>com.agilecrm.action.LoginEmployeeAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginEmployeeAction</servlet-name>
+		<url-pattern>/loginEmployeeAction</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoginFormAction</servlet-name>
+		<servlet-class>com.agilecrm.action.LoginFormAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginFormAction</servlet-name>
+		<url-pattern>/loginFormAction</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LogoutAction</servlet-name>
+		<servlet-class>com.agilecrm.action.LogoutAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutAction</servlet-name>
+		<url-pattern>/logoutAction</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RegisterEmployeeAction</servlet-name>
+		<servlet-class>com.agilecrm.action.RegisterEmployeeAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterEmployeeAction</servlet-name>
+		<url-pattern>/registerEmployeeAction</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RegistrationFormAction</servlet-name>
+		<servlet-class>com.agilecrm.action.RegistrationFormAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegistrationFormAction</servlet-name>
+		<url-pattern>/registrationFormAction</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SearchUserAction</servlet-name>
+		<servlet-class>com.agilecrm.action.SearchUserAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchUserAction</servlet-name>
+		<url-pattern>/searchUserAction</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UpdateEmployeeAction</servlet-name>
+		<servlet-class>com.agilecrm.action.UpdateEmployeeAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateEmployeeAction</servlet-name>
+		<url-pattern>/updateEmployeeAction</url-pattern>
+	</servlet-mapping>
+
+	<filter>
+		<filter-name>LoginFilter</filter-name>
+		<filter-class>com.agilecrm.filter.LoginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<url-pattern>/loginEmployeeAction</url-pattern>
+	</filter-mapping>
+ 
+	<filter>
+		<filter-name>CheckSessionFilter</filter-name>
+		<filter-class>com.agilecrm.filter.CheckSessionFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>CheckSessionFilter</filter-name>
+		<url-pattern>/deleteEmployeeAction</url-pattern>
+		<url-pattern>/getAllEmployeeAction</url-pattern>
+		<url-pattern>/getEmployeeAction</url-pattern>
+		<url-pattern>/logoutAction</url-pattern>
+		<url-pattern>/searchUserAction</url-pattern>
+		<url-pattern>/updateEmployeeAction</url-pattern>
+	</filter-mapping>
+
+
+
+
+
+	<welcome-file-list>
+		<welcome-file>home.html</welcome-file>
+	</welcome-file-list>
+	
+</web-app>
