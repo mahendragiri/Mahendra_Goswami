@@ -41,6 +41,7 @@ public class EmployeeDaoImplByDataSource implements EmployeeDao{
 		
 		try{
 			ds.put(emp);
+			System.out.println("successfully data insertion");
 			System.out.println("successfully data insertion");			
 			return flag;
 		}catch(Exception e){
