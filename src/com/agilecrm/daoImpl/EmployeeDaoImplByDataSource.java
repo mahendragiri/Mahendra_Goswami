@@ -38,6 +38,7 @@ public class EmployeeDaoImplByDataSource implements EmployeeDao{
 		emp.setProperty("password",empdto.getPassword());
 		emp.setProperty("status",empdto.getStatus());
 		System.out.println("last");
+		System.out.println("last");
 		
 		try{
 			ds.put(emp);
