@@ -6,7 +6,7 @@
 
 ![Figure 1-3](fig3.png "Figure 1-3")
 
-![Figure 1-4](pic2.png "Figure 1-4")
+![Figure 1-4](pic1.png "Figure 1-4")
 
-![Figure 1-5](pic2(1).png "Figure 1-5")
+![Figure 1-5](pic3.png "Figure 1-5")
 
