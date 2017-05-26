@@ -123,32 +123,30 @@ The detailed list of Trigger Events and the properties along with the descriptio
 
 ### **2 . Form Submit Trigger**
 
-Actually Form merge fields have two cases:<br>
-* If form name is mapped with Agile field, then use agile field. For example {{form.first_name}}
-
 | <center> <span style="font-size:16px;">Merge Fields      |  <center> <span style="font-size:16px;">Description  |
 |:---------------------------------|:------------------------------------|
-|{{form.first_name}} or {{first_name}}|This merge field returns first name of contact person.|
-|{{form.last_name}} or {{last_name}}|This merge field returns last name of contact person.|
-|{{form.email}} or {{email}}|This merge field returns email id of contact person.|
-|{{form.company}} or {{company}}|This merge field returns Company name.|
-|{{form.title}} or {{title}}|This merge field returns job description or title.|
-|{{form.website}} or {{website}}|This merge field returns website address.|
-|{{form.phone}} or {{phone}}|This merge field returns phone number.|
-|{{form.city}} or {{city}}|This merge field returns City name from contact address.|
-|{{form.state}} or {{state}}|This merge field returns State name from contact address.|
-|{{form.country}} or {{country}}|This merge field returns Country name from contact address.|
-|{{form.zip}} or {{zip}}|This merge field returns ZIP code or postal code from address.|
-|{{form.address}} or {{address}}|This merge field returns address of contact person.|
-|{{form.tags}} or {{tags}}|This merge field returns tags which is added in contact detail.|
-|{{form.note}} or {{note}}|This merge field returns notes about the contact in text format.|
-|{{form.custom_field}} or {{custom_field}}|Description is given below.||
+|{{form.first_name}}|This merge field returns first name of contact person.|
+|{{form.last_name}}|This merge field returns last name of contact person.|
+|{{form.email}}|This merge field returns email id of contact person.|
+|{{form.company}}|This merge field returns Company name.|
+|{{form.title}}|This merge field returns job description or title.|
+|{{form.website}}|This merge field returns website address.|
+|{{form.phone}}|This merge field returns phone number.|
+|{{form.city}}|This merge field returns City name from contact address.|
+|{{form.state}}|This merge field returns State name from contact address.|
+|{{form.country}}|This merge field returns Country name from contact address.|
+|{{form.zip}}|This merge field returns ZIP code or postal code from address.|
+|{{form.address}}|This merge field returns address of contact person.|
+|{{form.tags}}|This merge field returns tags which is added in form.|
+|{{form.note}}|This merge field returns notes about the contact which is added in form.|
+|{{form.custom field}}|This merge field returns value same as Contact's custom field. ||
 
-**{{form.custom_field}}** - Custom field returns the value from custom field which is created by owner. When owner creates a custom field and provide name or label of custom field along with type (Text, TextArea, Date, List, CheckBox, Number, Formula). Merge Fields work on the custom fields. Just place the Custom Field Name in the syntax and you can retrieve the custom field data. This custom field should match exactly with the database name and it is case sensitive.
+Also Form merge fields have two cases:<br>
+* If form name is mapped with Agile Field, then use agile field. For example if form id is mapped with Agile field 'First Name' then merge field is {{form.first_name}}.
 
 ![Figure 1-2](fig2.png "Figure 1-2")
 
-For example If my custom field name is **Language** then merge field is **{{form.Language}}**, custom field can't access with field id. In above screenshot field id is **language_id** then we can't use **{{form.language_id}}** merge field.
+In above screenshot If custom field name is **Language** then merge field is **{{form.Language}}**.
 
 * If form name is not mapped with Agile Field, then use given ID name. For example {{form.non_agile_field}}
 
@@ -162,16 +160,16 @@ In above screenshot field id is feedback then we can use **{{form.feedback}}** m
 |:-----------------------------|:------------------------------------|:---------------------|
 |{{ticket.id}}|This merge field returns Ticket id.||
 |{{ticket.subject}}|This merge field returns the subject of Ticket.||
-|{{ticket.status}}|This merge field returns the status of the Ticket.|New,Open,Pending,Closed|
+|{{ticket.status}}|This merge field returns the status of the Ticket.|New, Open, Pending, Closed|
 |{{ticket.requester_name}}|This merge field returns the Ticket requester name.||
 |{{ticket.requester_email}}|This merge field returns the Ticket requester email.||
 |{{ticket.group.id}}|This merge field returns Ticket group id.||
 |{{ticket.group.group_name}}|This merge field returns Ticket group name.||
 |{{ticket.assignee.name}}|This merge field returns Ticket assignee name.||
 |{{ticket.assignee.email}}|This merge field returns Ticket assignee email.||
-|{{ticket.priority}}|This merge field returns priority of the Ticket.|Low,Medium,High|
+|{{ticket.priority}}|This merge field returns priority of the Ticket.|Low, Medium, High|
 |{{ticket.type}}|This merge field returns type of the Ticket.|Problem, Question|
-|{{ticket.source}}|This merge field returns Ticket source.|Email,Webform|
+|{{ticket.source}}|This merge field returns Ticket source.|Email, Webform|
 |{{ticket.created_by}}|This merge field returns who created the Ticket.|Customer|
 |{{ticket.createdOn}}|This merge field returns the date when Ticket has been created.|Fri May 19, 2017|
 |{{ticket.closedOn}}|This merge field returns the date when Ticket has been closed.|Fri May 19, 2017|
