@@ -6,7 +6,7 @@ Merge Fields incorporates values from a record. The record can be a contact, dea
 
     Ex:- Dear {{first_name}} {{last_name}}
 
-![Figure 1-1](screenshot/fig1.png "Figure 1-1")
+![Figure 1-1](fig1.png "Figure 1-1")
 
 In above screenshot “first_name” , “ last_name" Merge Fields are used for sending an email with greeting. When the mail is sent , the recipient’s first name and last name are retrieved and inserted in place of the merge field.
 
@@ -145,13 +145,13 @@ Actually Form merge fields have two cases:<br>
 
 **{{form.custom_field}}** - Custom field returns the value from custom field which is created by owner. When owner creates a custom field and provide name or label of custom field along with type (Text, TextArea, Date, List, CheckBox, Number, Formula). Merge Fields work on the custom fields. Just place the Custom Field Name in the syntax and you can retrieve the custom field data. This custom field should match exactly with the database name and it is case sensitive.
 
-![Figure 1-2](screenshot/fig3.png "Figure 1-2")
+![Figure 1-2](fig2.png "Figure 1-2")
 
 For example If my custom field name is **Language** then merge field is **{{form.Language}}**, custom field can't access with field id. In above screenshot field id is **language_id** then we can't use **{{form.language_id}}** merge field.
 
 * If form name is not mapped with Agile Field, then use given ID name. For example {{form.non_agile_field}}
 
-![Figure 1-3](screenshot/fig2.png "Figure 1-3")
+![Figure 1-3](fig3.png "Figure 1-3")
 
 In above screenshot field id is feedback then we can use **{{form.feedback}}** merge field.
 
