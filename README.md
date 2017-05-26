@@ -78,11 +78,11 @@ If we have custom field type is a check box then merge field returns on or off v
 |{{deal.milestone}}|This merge field returns Milestone of deal.|New/Won/Lost|
 |{{deal.description}}|This merge field returns Description of the deal.| |
 |{{deal.expected_value}}|This merge field returns Value of deal.| |
-|{{deal.expected_value_exact}}|This merge field returns Value of deal.| |
+|{{deal.expected_value_exact}}|This merge field returns Value of deal including decimal point.| |
 |{{deal.probability}}|This merge field returns probability of deal.|Integer value range between 0 to 100|
 |{{deal.old_milestone}}|This merge field returns name of old milestone. If deal milestone will be changed.|New/Won/Lost|
 |{{deal.milestone_changed_time_string}}|This merge field returns in which date and time milestone changed.|12 Dec, 10:15|
-|{{deal.custom_data.fieldname}}|Description is Given below..|  | |
+|{{deal.custom_data.fieldname}}|Description is Given below..|  |
 
 <span style="font-size:15px;">**{{deal.custom_data.fieldname}}-**</span> Custom field returns the value from custom field which is created by owner. When owner creates a custom field and provide name or label of custom field along with type (Text, TextArea, Date, List, CheckBox, Number, Formula). Merge Fields work on the custom fields. Just place the Custom Field Name in the syntax and you can retrieve the custom field data. This custom field should match exactly  with the database name and it is case sensitive.
 <br>    For e.g. If my custom field name is **“currency”** then merge field is
