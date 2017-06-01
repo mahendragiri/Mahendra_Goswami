@@ -8,6 +8,9 @@ Merge Fields incorporates values from a record. The record can be a contact, dea
 
 ![Figure 1-1](fig1.png "Figure 1-1")
 
+
+![Figure 1-1](figggg.png "Figure 1-1")
+
 In above screenshot “first_name” , “ last_name" Merge Fields are used for sending an email with greeting. When the mail is sent , the recipient’s first name and last name are retrieved and inserted in place of the merge field.
 
 ### **Syntax of Merge Fields:**
